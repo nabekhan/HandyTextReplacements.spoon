@@ -39,10 +39,3 @@ Give one rule multiple spoken aliases by making `search` an array:
   "replace": ")"
 }
 ```
-
-## Releases
-
-Pushing a version tag such as `v2.2.0` runs the release workflow. The workflow
-tests the engine and publishes `HandyTextReplacements.spoon.zip` plus its
-SHA-256 checksum to a GitHub release. The tag must match `obj.version` in
-`init.lua`.
