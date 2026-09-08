@@ -1,0 +1,6 @@
+{
+  "restore_clipboard": true,
+  "restore_delay_seconds": 0.25,
+  "configure_handy_on_start": true,
+  "log_level": "info"
+}

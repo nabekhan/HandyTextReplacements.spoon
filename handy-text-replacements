@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if [ "$#" -ne 1 ]; then
+    echo "Handy text bridge expects exactly one transcription argument" >&2
+    exit 64
+fi
+
+HS_CLI="/Applications/Hammerspoon.app/Contents/Frameworks/hs/hs"
+if [ ! -x "$HS_CLI" ]; then
+    echo "Hammerspoon CLI not found: $HS_CLI" >&2
+    exit 69
+fi
+
+ENCODED=$(printf '%s' "$1" | /usr/bin/base64 | /usr/bin/tr -d '\r\n')
+RESULT=$("$HS_CLI" -c "return spoon.HandyTextReplacements:receiveExternalBase64(\"$ENCODED\")" 2>&1)
+LAST_LINE=$(printf '%s\n' "$RESULT" | /usr/bin/tail -n 1)
+
+if [ "$LAST_LINE" != "ok" ]; then
+    echo "$RESULT" >&2
+    exit 1
+fi

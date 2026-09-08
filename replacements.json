@@ -1,0 +1,145 @@
+{
+  "enabled": true,
+  "trim_input": true,
+  "replacements": [
+    {
+      "search": "new paragraph",
+      "replace": ".\\n\\n",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true,
+      "trim_spaces_after": true,
+      "capitalization_rule": "force_uppercase"
+    },
+    {
+      "search": "new line",
+      "replace": ".\\n",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true,
+      "trim_spaces_after": true,
+      "capitalization_rule": "force_uppercase"
+    },
+    {
+      "search": "open quote",
+      "replace": "“",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_punctuation_after": true,
+      "trim_spaces_after": true
+    },
+    {
+      "search": ["closed quote", "close quote"],
+      "replace": "”",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true,
+      "capitalization_rule": "force_lowercase"
+    },
+    {
+      "search": ["open paren", "open Perrin", "open parent"],
+      "replace": "(",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_punctuation_after": true,
+      "trim_spaces_after": true,
+      "capitalization_rule": "force_lowercase"
+    },
+    {
+      "search": [
+        "closed paren",
+        "close paren",
+        "closed Perrin",
+        "close Perrin",
+        "closed parent",
+        "close parent"
+      ],
+      "replace": ")",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true,
+      "capitalization_rule": "force_lowercase"
+    },
+    {
+      "search": "open bracket",
+      "replace": "[",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_punctuation_after": true,
+      "trim_spaces_after": true
+    },
+    {
+      "search": ["closed bracket", "close bracket"],
+      "replace": "]",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true,
+      "capitalization_rule": "force_lowercase"
+    },
+    {
+      "search": ["hyphen", "dash"],
+      "replace": "-",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true,
+      "trim_spaces_after": true
+    },
+    {
+      "search": ["exclamation point", "exclamation mark"],
+      "replace": "!",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true,
+      "capitalization_rule": "force_uppercase"
+    },
+    {
+      "search": "question mark",
+      "replace": "?",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true,
+      "capitalization_rule": "force_uppercase"
+    },
+    {
+      "search": ["full stop", "period"],
+      "replace": ".",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true,
+      "capitalization_rule": "force_uppercase"
+    },
+    {
+      "search": ["semi-colon", "semicolon"],
+      "replace": ";",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true
+    },
+    {
+      "search": "comma",
+      "replace": ",",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true
+    },
+    {
+      "search": "colon",
+      "replace": ":",
+      "match_whole_word": true,
+      "trim_punctuation_before": true,
+      "trim_spaces_before": true,
+      "trim_punctuation_after": true
+    }
+  ]
+}
